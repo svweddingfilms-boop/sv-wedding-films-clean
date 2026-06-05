@@ -8,10 +8,11 @@ const cormorant = Cormorant_Garamond({
 
 export default function PortfolioPage() {
 
-  const portfolioImages = [
-  "https://res.cloudinary.com/dzbomgzke/image/upload/v1780674611/p64.jpg"
-];
-
+  const portfolioImages = Array.from(
+  { length: 66 },
+  (_, i) =>
+    `https://res.cloudinary.com/dzbomgzke/image/upload/v1780674378/p${i + 1}.jpg`
+);
   const heights = [
     30, 40, 35, 50, 45, 38, 60, 42, 55, 33,
     48, 37, 52, 44, 39, 58, 41, 36, 53, 47
@@ -24,13 +25,13 @@ export default function PortfolioPage() {
       <h1
         className={`${cormorant.className} mb-12 md:mb-20 text-center text-[22px] md:text-[48px] uppercase tracking-[0.1em] text-[#5f5a55]`}
       >
-        Portfolio
+       Potfolio
 
         <div className="mx-auto mt-3 h-[1px] w-10 bg-[#8c8681]" />
       </h1>
 
       {/* MASONRY GRID */}
-     <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
+     <div className="columns-2 md:columns-3 gap-0.5 space-y-0.5">
   {portfolioImages.map((img, index) => {
 
     // only portrait-style variation
@@ -46,7 +47,7 @@ export default function PortfolioPage() {
         <img
           src={img}
           alt={`portfolio-${index}`}
-          className="w-full h-auto object-cover transition duration-700 ease-out group-hover:scale-105 group-hover:brightness-110"
+          className="w-full h-full object-cover transition duration-700 ease-out group-hover:scale-105 group-hover:brightness-110"
         />
 
         <div className="absolute inset-0 bg-black/10 opacity-0 transition duration-700 group-hover:opacity-100" />
