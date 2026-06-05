@@ -7,11 +7,10 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600"],
 });
 
-const photos = Array.from(
-  { length: 20 },
-  (_, i) => `/sv-cuddles/newborn/${i + 1}.jpg`
-);
-
+const photos = Array.from({ length: 20 }, (_, i) => {
+  const num = i + 11;
+  return `https://res.cloudinary.com/dzbomgzke/image/upload/v1780681726/n${num}.jpg`;
+});
 // Same premium masonry pattern as maternity
 const heights = [
   65, 75, 70, 85, 78,

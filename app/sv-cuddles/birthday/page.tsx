@@ -8,28 +8,10 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600"],
 });
 
-const photos = [
-  "/sv-cuddles/birthday/1.jpg",
-  "/sv-cuddles/birthday/2.jpg",
-  "/sv-cuddles/birthday/3.jpg",
-  "/sv-cuddles/birthday/4.jpg",
-  "/sv-cuddles/birthday/5.jpg",
-  "/sv-cuddles/birthday/6.jpg",
-  "/sv-cuddles/birthday/7.jpg",
-  "/sv-cuddles/birthday/8.jpg",
-  "/sv-cuddles/birthday/9.jpg",
-  "/sv-cuddles/birthday/10.jpg",
-  "/sv-cuddles/birthday/11.jpg",
-  "/sv-cuddles/birthday/12.jpg",
-  "/sv-cuddles/birthday/13.jpg",
-  "/sv-cuddles/birthday/14.jpg",
-  "/sv-cuddles/birthday/15.jpg",
-  "/sv-cuddles/birthday/16.jpg",
-  "/sv-cuddles/birthday/17.jpg",
-  "/sv-cuddles/birthday/18.jpg",
-  "/sv-cuddles/birthday/19.jpg",
-  "/sv-cuddles/birthday/20.jpg",
-];
+const photos = Array.from({ length: 20 }, (_, i) => {
+  const name = `b${i + 1}`;
+  return `https://res.cloudinary.com/dzbomgzke/image/upload/v1780681463/${name}.jpg`;
+});
 
 export default function BirthdayGallery() {
   const [visible, setVisible] = useState(20);

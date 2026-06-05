@@ -7,9 +7,12 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600"],
 });
 
-const photos = Array.from(
-  { length: 20 },
-  (_, i) => `/sv-cuddles/milestones/${i + 1}.jpg`
+const photos = [
+  ...Array.from({ length: 10 }, (_, i) => `m1${i}`),   // m10 - m19
+  ...Array.from({ length: 10 }, (_, i) => `m11${i}`)   // m110 - m119
+].map(
+  (name) =>
+    `https://res.cloudinary.com/dzbomgzke/image/upload/v1780681648/${name}.jpg`
 );
 
 // Premium portrait-focused masonry pattern
