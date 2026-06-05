@@ -7,9 +7,10 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600"],
 });
 
-const photos = Array.from(
+const maternityImages = Array.from(
   { length: 21 },
-  (_, i) => `/sv-cuddles/maternity/${i + 1}.jpg`
+  (_, i) =>
+    `https://res.cloudinary.com/dzbomgzke/image/upload/v1780678541/${i + 1}.jpg`
 );
 
 // portrait-focused height pattern (same idea as your portfolio)
@@ -33,7 +34,7 @@ export default function MaternityGallery() {
       {/* 🔥 PORTFOLIO-STYLE MASONRY GRID */}
       <div className="columns-2 md:columns-3 gap-0.5 space-y-0.5">
 
-        {photos.map((photo, index) => (
+        {maternityImages.map((photo, index) => (
           <div
             key={index}
             className="group relative overflow-hidden rounded-md"
