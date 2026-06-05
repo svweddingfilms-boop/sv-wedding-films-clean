@@ -7,11 +7,10 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600"],
 });
 
-const maternityImages = Array.from(
-  { length: 21 },
-  (_, i) =>
-    `https://res.cloudinary.com/dzbomgzke/image/upload/v1780678541/sv-cuddles/maternity/m10000${i + 1}.jpg`
-);
+const maternityImages = Array.from({ length: 21 }, (_, i) => {
+  const num = 100000 + i;
+  return `https://res.cloudinary.com/dzbomgzke/image/upload/v1780681949/sv-cuddles/maternity/m${num}.jpg`;
+});
 
 // portrait-focused height pattern (same idea as your portfolio)
 const heights = [
