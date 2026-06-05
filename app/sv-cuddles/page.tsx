@@ -44,7 +44,7 @@ export default function SVCuddlesPage() {
 
           <div className="mt-12">
             <img
-  src="/sv-cuddles/maternity/cover.jpg"
+  src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780684716/m-cover.jpg"
   alt="Maternity"
   className="w-full aspect-video object-cover"
 />
@@ -77,10 +77,11 @@ export default function SVCuddlesPage() {
 
           <div className="mt-12">
             <img
-  src="/sv-cuddles/newborn/cover.jpg"
+  src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780684373/ncover.jpg"
   alt="Newborn"
   className="w-full aspect-video object-cover"
 />
+
           </div>
 
           <a href="/sv-cuddles/newborn">
@@ -112,10 +113,10 @@ export default function SVCuddlesPage() {
 
           <div className="mt-12">
             <img
-  src="/sv-cuddles/milestones/cover.jpg"
-  alt="Milestones"
-  className="w-full aspect-video object-cover"
-/>
+    src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780681661/ms-cover.jpg"
+    alt="Milestones"
+    className="w-full aspect-video object-cover"
+  />
           </div>
 
           <a href="/sv-cuddles/milestones">
@@ -145,7 +146,7 @@ export default function SVCuddlesPage() {
 
           <div className="mt-12">
             <img
-  src="/sv-cuddles/birthday/cover.jpg"
+  src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780681463/b-cover.jpg"
   alt="Birthday"
   className="w-full aspect-video object-cover"
 />
@@ -178,8 +179,8 @@ export default function SVCuddlesPage() {
 
           <div className="mt-12">
 <img
-  src="/sv-cuddles/saree-ceremony/cover.jpg"
-  alt="Saree-ceremony"
+  src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780680454/cover.jpg"
+  alt="Saree Ceremony"
   className="w-full aspect-video object-cover"
 />
           </div>

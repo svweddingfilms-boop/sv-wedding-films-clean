@@ -8,8 +8,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 const maternityImages = Array.from({ length: 21 }, (_, i) => {
-  const num = 100000 + i;
-  return `https://res.cloudinary.com/dzbomgzke/image/upload/v1780681949/sv-cuddles/maternity/m${num}.jpg`;
+  const name = `${i + 1}m`;
+  return `https://res.cloudinary.com/dzbomgzke/image/upload/v1780684687/${name}.jpg`;
 });
 
 // portrait-focused height pattern (same idea as your portfolio)
