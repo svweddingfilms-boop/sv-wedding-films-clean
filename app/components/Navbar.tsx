@@ -57,25 +57,21 @@ export default function Navbar() {
   const handleClick = (item: any) => {
   setMobileOpen(false);
 
-  // if it's a page route (like SV Cuddles / Contact)
+  // page routes
   if (item.route) {
     router.push(item.route);
     return;
   }
 
-  // ALWAYS go home first for section scroll
-  router.push("/");
+  // smooth scroll inside same page
+  const el = document.getElementById(item.id);
 
-  setTimeout(() => {
-    const el = document.getElementById(item.id);
-
-    if (el) {
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }, 100); // small delay ensures DOM is ready
+  if (el) {
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
 };
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-xl border-b border-white/10">

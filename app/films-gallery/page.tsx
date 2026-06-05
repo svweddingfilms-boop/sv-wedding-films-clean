@@ -11,16 +11,13 @@ const cormorant = Cormorant_Garamond({
 
 const films = [
   {
-    video: "/videos/film1.mp4",
-    poster: "/videos/film1-thumb.jpg",
+    video: "https://youtu.be/EZrTdiO-v30?si=NpnMg0ZJ8eqdc_DA",
   },
   {
-    video: "/videos/film2.mp4",
-    poster: "/videos/film2-thumb.jpg",
+    video: "https://youtu.be/ny5R3-nKOFk?si=q0mzXLz1ngYJLMgw",
   },
   {
-    video: "/videos/film3.mp4",
-    poster: "/videos/film3-thumb.jpg",
+    video: "https://youtu.be/cuPeWgn2f28?si=RwpfPyIhJVFtKpEv",
   },
 ];
 
@@ -47,7 +44,7 @@ export default function FilmsGalleryPage() {
     <video
       controls
       preload="metadata"
-      poster={film.poster}
+    
       className="w-full aspect-video object-cover"
     >
       <source src={film.video} type="video/mp4" />

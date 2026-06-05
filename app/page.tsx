@@ -4,7 +4,7 @@ import PortfolioSection from "./PortfolioSection";
 import TestimonialsPage from "./testimonials/page";
 import FilmsPage from "./films/page";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Allura } from "next/font/google";
 
 const allura = Allura({
@@ -52,7 +52,8 @@ const montserrat = Montserrat({
   const frameRef = useRef<number | null>(null);
   const isPausedRef = useRef(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-useEffect(() => {
+
+  useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
 
@@ -143,6 +144,26 @@ if (container.scrollLeft >= maxScroll) {
 ========================= */
 
 export default function Home() {
+  const [showTop, setShowTop] = useState(false);
+  useEffect(() => {
+  const portfolio = document.getElementById("portfolio");
+
+  if (!portfolio) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      // show button ONLY when portfolio is NOT visible
+      setShowTop(!entry.isIntersecting);
+    },
+    {
+      threshold: 0.2, // adjust sensitivity
+    }
+  );
+
+  observer.observe(portfolio);
+
+  return () => observer.disconnect();
+}, []);
   return (
    <main className="relative w-full min-h-screen overflow-x-hidden text-white">
   
@@ -216,16 +237,15 @@ export default function Home() {
   playsInline
   className="hidden md:block absolute left-0 top-0 h-full w-full object-cover"
 >
-  <source src="/videos/hero/hero.mp4" type="video/mp4" />
+  <source src="https://youtu.be/BPMjys39NDA?si=gQTzwr1_zfo1HkAT" />
 </video>
 
 {/* MOBILE IMAGE */}
 <img
   src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780643256/hero-mobile_s0oj6j.jpg"
   alt="Hero Mobile"
-  className="block md:hidden absolute inset-0 w-full h-full object-contain bg-black"
+  className="block md:hidden absolute inset-0 w-full h-full object-cover scale-105"
 />
-
         {/* OVERLAY */}
 
         <div className="absolute inset-0 z-0 bg-black/45" />
@@ -359,6 +379,34 @@ export default function Home() {
 ========================= */}
 
 <PortfolioSection />
+{showTop && (
+  <div className="fixed bottom-6 right-6 z-50 md:hidden">
+    <button
+      onClick={() =>
+        document.getElementById("home")?.scrollIntoView({
+          behavior: "smooth",
+        })
+      }
+      className="w-10 h-10 rounded-full border border-black/40 flex items-center justify-center text-black/60 hover:text-black hover:border-black transition bg-white/30 backdrop-blur-md"
+    >
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M6 15L12 9L18 15"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+)}
+
 {/* =========================
     FILMS PREVIEW
 ========================= */}

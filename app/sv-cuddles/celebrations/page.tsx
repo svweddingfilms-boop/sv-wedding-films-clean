@@ -9,16 +9,16 @@ const cormorant = Cormorant_Garamond({
 
 const celebrationVideos = [
   {
-    video: "/sv-cuddles/celebrations/celebration1.mp4",
-    poster: "/sv-cuddles/celebrations/thumb1.jpg",
+    video: "https://res.cloudinary.com/dzbomgzke/video/upload/v1780648038/celebration3_k1wlom.mp4",
+    poster: "https://res.cloudinary.com/dzbomgzke/image/upload/v1780646602/thumb1_vx09vy.jpg",
   },
   {
-    video: "/sv-cuddles/celebrations/celebration2.mp4",
-    poster: "/sv-cuddles/celebrations/thumb2.jpg",
+    video: "https://res.cloudinary.com/dzbomgzke/video/upload/v1780647953/celebration2_ns9o9v.mp4",
+    poster: "https://res.cloudinary.com/dzbomgzke/image/upload/v1780646604/thumb2_otxahg.jpg",
   },
   {
-    video: "/sv-cuddles/celebrations/celebration3.mp4",
-    poster: "/sv-cuddles/celebrations/thumb3.jpg",
+    video: "https://res.cloudinary.com/dzbomgzke/video/upload/v1780648038/celebration3_k1wlom.mp4",
+    poster: "https://res.cloudinary.com/dzbomgzke/image/upload/v1780646607/thumb3_hdhylo.jpg",
   },
 ];
 
