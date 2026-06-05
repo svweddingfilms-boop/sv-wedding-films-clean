@@ -9,7 +9,8 @@ const cormorant = Cormorant_Garamond({
 
 const photos = Array.from(
   { length: 20 },
-  (_, i) => `/sv-cuddles/saree-ceremony/${i + 1}.jpg`
+  (_, i) =>
+    `https://res.cloudinary.com/dzbomgzke/image/upload/v1780679602/1.jpg`
 );
 
 // Premium portrait-focused masonry pattern
