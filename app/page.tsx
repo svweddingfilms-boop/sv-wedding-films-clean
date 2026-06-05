@@ -110,29 +110,29 @@ if (container.scrollLeft >= maxScroll) {
       <div className="flex w-max pl-6 md:pl-0">
 
         {/* ================= SET 1 ================= */}
-        <img src="/cinematic-gallery/p1.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p2.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p3.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/l1.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
-        <img src="/cinematic-gallery/p4.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p5.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/l2.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
-        <img src="/cinematic-gallery/p6.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p7.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/l3.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646012/Jyosna_-_Kaushik_-1_gbaw4n.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646014/Jyosna_-_Kaushik_-3_riu19p.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646016/Jyosna_-_Kaushik_-4_ivfxc8.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646030/Jyosna_-_Kaushik_-9_rnoc1t.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646019/Jyosna_-_Kaushik_-5_nxwmmy.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646022/Jyosna_-_Kaushik_-6_dw2msu.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646036/Jyosna_-_Kaushik_-13_yj2pdu.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646032/Jyosna_-_Kaushik_-12_txp9hf.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646044/Jyosna_-_Kaushik_-17_jhfxn3.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646065/Jyosna_-_Kaushik_-21_j5pmci.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
 
         {/* ================= SET 2 (DUPLICATE) ================= */}
-        <img src="/cinematic-gallery/p1.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p2.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p3.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/l1.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
-        <img src="/cinematic-gallery/p4.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p5.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/l2.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
-        <img src="/cinematic-gallery/p6.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/p7.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
-        <img src="/cinematic-gallery/l3.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
-
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646012/Jyosna_-_Kaushik_-1_gbaw4n.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646014/Jyosna_-_Kaushik_-3_riu19p.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646016/Jyosna_-_Kaushik_-4_ivfxc8.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646030/Jyosna_-_Kaushik_-9_rnoc1t.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646019/Jyosna_-_Kaushik_-5_nxwmmy.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646022/Jyosna_-_Kaushik_-6_dw2msu.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646036/Jyosna_-_Kaushik_-13_yj2pdu.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646032/Jyosna_-_Kaushik_-12_txp9hf.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646044/Jyosna_-_Kaushik_-17_jhfxn3.jpg" className="h-[320px] md:h-[520px] w-[220px] md:w-[340px] object-cover" />
+        <img src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780646065/Jyosna_-_Kaushik_-21_j5pmci.jpg" className="h-[320px] md:h-[520px] w-[380px] md:w-[620px] object-cover" />
+ 
       </div>
     </div>
   );
@@ -149,7 +149,7 @@ export default function Home() {
   {/* BACKGROUND IMAGE */}
   <div className="fixed inset-0 -z-10">
     <img
-      src="/bg/sunset.jpg"
+      src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780643297/sunset_bnhk7q.jpg"
       alt="Sunset Background"
       className="h-full w-full object-cover"
     />
@@ -221,7 +221,7 @@ export default function Home() {
 
 {/* MOBILE IMAGE */}
 <img
-  src="/videos/hero/hero-mobile.jpg"
+  src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780643256/hero-mobile_s0oj6j.jpg"
   alt="Hero Mobile"
   className="block md:hidden absolute inset-0 w-full h-full object-contain bg-black"
 />
@@ -281,7 +281,7 @@ export default function Home() {
       {/* IMAGE */}
       <div className="order-2 md:order-1 flex justify-center items-stretch">
         <img
-          src="/about/about.jpg"
+          src="https://res.cloudinary.com/dzbomgzke/image/upload/v1780643153/about_vkbz1e.jpg"
           alt="About SV Photography"
         />
       </div>

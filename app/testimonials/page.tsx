@@ -17,19 +17,19 @@ const montserrat = Montserrat({
 export default function TestimonialsPage() {
   const testimonials = [
     {
-      image: "/images/client1.jpg",
+      image: "https://res.cloudinary.com/dzbomgzke/image/upload/v1780642939/Jyosna_-_Kaushik_-64_mbxaii.jpg",
       name: "Priya & Family",
       review:
         "The photographs captured every emotion beautifully. We couldn't have asked for a better experience.",
     },
     {
-      image: "/images/client2.jpg",
+      image: "https://res.cloudinary.com/dzbomgzke/image/upload/v1780642938/Jyosna_-_Kaushik_-61_harfzb.jpg",
       name: "Ananya",
       review:
         "The newborn session was so comfortable and the final images were stunning.",
     },
     {
-      image: "/images/client3.jpg",
+      image: "https://res.cloudinary.com/dzbomgzke/image/upload/v1780642937/Jyosna_-_Kaushik_-98_wmubw7.jpg",
       name: "Rahul & Swathi",
       review:
         "Professional, patient, and incredibly talented. Every photograph felt magical.",
