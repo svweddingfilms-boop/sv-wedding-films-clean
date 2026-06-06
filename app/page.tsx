@@ -237,7 +237,13 @@ export default function Home() {
   playsInline
   className="hidden md:block absolute left-0 top-0 h-full w-full object-cover"
 >
-  <source src="https://youtu.be/BPMjys39NDA?si=gQTzwr1_zfo1HkAT" />
+  <iframe
+  src="https://www.youtube.com/embed/BPMjys39NDA?si=6vlZp5VYS4oTW2RZ"
+  title="YouTube video player"
+  className="w-full aspect-video"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+/>
 </video>
 
 {/* MOBILE IMAGE */}

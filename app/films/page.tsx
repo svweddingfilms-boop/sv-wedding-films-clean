@@ -32,16 +32,13 @@ export default function FilmsGalleryPage() {
       </Reveal>
 
       <div className="max-w-5xl mx-auto">
-       <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls
-  className="w-full aspect-video object-cover"
->
-  <source src="/videos/film1.mp4" type="video/mp4" />
-</video>
+       <iframe
+  src="https://www.youtube.com/embed/EZrTdiO-v30?si=x_ARZ1dE1WWl8okd"
+  title="YouTube video player"
+  className="w-full aspect-video"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+/>
       </div>
 
       <div className="flex justify-center mt-16">

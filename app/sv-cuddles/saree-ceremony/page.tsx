@@ -22,7 +22,7 @@ const heights = [
 
 export default function SareeCeremonyGallery() {
   return (
-    <section className="min-h-screen bg-white px-8 md:px-1 md:px-16 py-28">
+     <section className="min-h-screen bg-white px-1 md:px-6 md:px-16 py-28">
 
       {/* TITLE */}
       <div className="text-center mb-20">
@@ -35,7 +35,6 @@ export default function SareeCeremonyGallery() {
 
       {/* PREMIUM MASONRY GRID */}
       <div className="columns-2 md:columns-3 gap-0.5 space-y-0.5">
-
         {photos.map((photo, index) => (
           <div
             key={index}

@@ -225,7 +225,7 @@ export default function SVCuddlesPage() {
         className="aspect-video w-full object-cover shadow-md"
       >
         <source
-          src="/sv-cuddles/celebrations/celebration1.mp4"
+          src="https://res.cloudinary.com/dzbomgzke/video/upload/v1780646752/celebration1_mj29ci.mp4"
           type="video/mp4"
         />
       </video>

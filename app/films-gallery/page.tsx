@@ -11,13 +11,13 @@ const cormorant = Cormorant_Garamond({
 
 const films = [
   {
-    video: "https://youtu.be/EZrTdiO-v30?si=NpnMg0ZJ8eqdc_DA",
+    video: "https://www.youtube.com/embed/EZrTdiO-v30?si=-Uq1pF7oEd7MNPv1",
   },
   {
-    video: "https://youtu.be/ny5R3-nKOFk?si=q0mzXLz1ngYJLMgw",
+    video: "https://www.youtube.com/embed/ny5R3-nKOFk?si=dUVVPKavRHXDZ97A",
   },
   {
-    video: "https://youtu.be/cuPeWgn2f28?si=RwpfPyIhJVFtKpEv",
+    video: "https://www.youtube.com/embed/cuPeWgn2f28?si=ulfszC796xnEHnlw",
   },
 ];
 
@@ -29,7 +29,9 @@ export default function FilmsGalleryPage() {
   };
 
   return (
-    <section className="min-h-screen bg-white px-8 md:px-12 lg:px-6 md:px-16 py-28">
+    <section className="min-h-screen bg-white px-8 md:px-16 py-28">
+      
+      {/* TITLE */}
       <div className="text-center mb-20">
         <h1
           className={`${cormorant.className} text-5xl md:text-7xl tracking-[0.2em] text-[#8B6F5A]`}
@@ -38,21 +40,21 @@ export default function FilmsGalleryPage() {
         </h1>
       </div>
 
+      {/* GRID */}
       <div className="grid md:grid-cols-2 gap-10">
         {films.slice(0, visible).map((film, index) => (
-  <Reveal key={index}>
-    <video
-      controls
-      preload="metadata"
-    
-      className="w-full aspect-video object-cover"
-    >
-      <source src={film.video} type="video/mp4" />
-    </video>
-  </Reveal>
-))}
+          <Reveal key={index}>
+            <iframe
+  src={film.video}
+  className="w-full aspect-video rounded-md"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+/>
+          </Reveal>
+        ))}
       </div>
 
+      {/* LOAD MORE */}
       {visible < films.length && (
         <div className="flex justify-center mt-16">
           <button
