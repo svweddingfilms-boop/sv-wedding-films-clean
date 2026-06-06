@@ -145,25 +145,25 @@ if (container.scrollLeft >= maxScroll) {
 
 export default function Home() {
   const [showTop, setShowTop] = useState(false);
+
   useEffect(() => {
-  const portfolio = document.getElementById("portfolio");
+    const portfolio = document.getElementById("portfolio");
 
-  if (!portfolio) return;
+    if (!portfolio) return;
 
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      // show button ONLY when portfolio is NOT visible
-      setShowTop(!entry.isIntersecting);
-    },
-    {
-      threshold: 0.2, // adjust sensitivity
-    }
-  );
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowTop(!entry.isIntersecting);
+      },
+      {
+        threshold: 0.2,
+      }
+    );
 
-  observer.observe(portfolio);
+    observer.observe(portfolio);
 
-  return () => observer.disconnect();
-}, []);
+    return () => observer.disconnect();
+  }, []);
   return (
    <main className="relative w-full min-h-screen overflow-x-hidden text-white">
   
@@ -230,21 +230,22 @@ export default function Home() {
       >
 
        {/* DESKTOP VIDEO */}
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="hidden md:block absolute left-0 top-0 h-full w-full object-cover"
->
+
+  {/* DESKTOP YOUTUBE BACKGROUND VIDEO */}
+{/* DESKTOP YOUTUBE BACKGROUND VIDEO */}
+{/* HERO BACKGROUND VIDEO */}
+<div className="absolute inset-0 w-full h-full overflow-hidden">
+
   <iframe
-  src="https://www.youtube.com/embed/BPMjys39NDA?si=6vlZp5VYS4oTW2RZ"
-  title="YouTube video player"
-  className="w-full aspect-video"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen
-/>
-</video>
+    src="https://www.youtube.com/embed/BPMjys39NDA?autoplay=1&mute=1&loop=1&playlist=BPMjys39NDA&controls=0&modestbranding=1&showinfo=0&rel=0"
+    title="Hero Video"
+    allow="autoplay; encrypted-media"
+    className="absolute top-1/2 left-1/2 w-[120%] h-[120%] -translate-x-1/2 -translate-y-1/2 scale-110 pointer-events-none"
+  />
+
+
+
+</div>
 
 {/* MOBILE IMAGE */}
 <img
